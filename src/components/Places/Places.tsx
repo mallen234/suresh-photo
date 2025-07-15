@@ -1,15 +1,21 @@
-import { PlacesProps, Place } from "../../types";
+import { Place } from "src/types/types";
 import "./places.css";
 
-const Places: React.FC<PlacesProps> = ({ places }) => {
+export interface PlacesProps {
+  places: Place[];
+  placeNameChange: React.Dispatch<React.SetStateAction<Place | undefined>>;
+}
+
+const Places: React.FC<PlacesProps> = ({ places, placeNameChange }) => {
   const onMouseOverEvent = (place: Place) => {
     console.log(place.name);
+    placeNameChange(place);
   };
 
   return (
     <div className="places-box">
       {places.map((place, index) => (
-        <h2 key={index} style={{ margin: 0 }}>
+        <h1 key={index} style={{ margin: 0 }}>
           <a
             href={place.url}
             className="places-text"
@@ -19,7 +25,7 @@ const Places: React.FC<PlacesProps> = ({ places }) => {
           >
             {place.name.toUpperCase()}
           </a>
-        </h2>
+        </h1>
       ))}
     </div>
   );

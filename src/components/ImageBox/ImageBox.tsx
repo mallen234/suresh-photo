@@ -1,13 +1,14 @@
 import React from "react";
 import "./imagebox.css";
+import { Place } from "src/types/types";
 
 interface ImageProps {
-  url: string;
+  currentPlace?: Place;
 }
 
-const ImageBox: React.FC<ImageProps> = ({ url }) => {
+const ImageBox: React.FC<ImageProps> = ({ currentPlace }) => {
   const maxLeft = 200;
-  const minNum = 50;
+  const minNum = 150;
   const maxVerticalMovement = 300;
 
   const maxWidth = 200;
@@ -19,11 +20,15 @@ const ImageBox: React.FC<ImageProps> = ({ url }) => {
 
   const image = randomNumberObjMaker();
 
+  const randomImageNumber = Math.floor(
+    Math.random() * (currentPlace?.maxNumber || 1)
+  );
+
   return (
     <>
       <div className="box-outer">
         <img
-          src={url}
+          src={`${currentPlace?.urlBase}${randomImageNumber}.jpg`}
           className="image-container"
           style={{
             left: `${image.x * maxLeft}px`,

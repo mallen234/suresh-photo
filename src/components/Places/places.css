@@ -1,20 +1,21 @@
 .places-box {
-  width: 200px;
+  width: 400px;
   margin: 0;
   height: 100%;
   display: flex;
   flex-direction: column;
+  gap: 35px;
 }
 
 .places-text {
   margin: 0;
   font-family: "Franklin Gothic Condensed", "Franklin Gothic", Helvetica, Arial,
     sans-serif;
-  font-size: 32px;
+  font-size: 42px;
   font-weight: 600;
   line-height: 48px;
   text-align: center;
-  width: 200px;
+  /* width: 200px; */
   display: block;
   color: black;
 }

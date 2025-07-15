@@ -1,26 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import "./canvas.css";
-import { Place } from "../../types";
+import { Place } from "src/types/types";
+
+import ImageBox from "src/components/ImageBox/ImageBox";
+import places from "src/const";
 import Places from "../Places/Places";
-import ImageBox from "../ImageBox/ImageBox";
 
 const Canvas: React.FC = () => {
-  const places: Place[] = [
-    { name: "Iceland", url: "" },
-    { name: "Thailand", url: "" },
-    { name: "Cambodia", url: "" },
-    { name: "Vietnam", url: "" },
-    { name: "Timor Leste", url: "" },
-    { name: "Singapore", url: "" },
-    { name: "Indonesia", url: "" },
-  ];
+  const [currentPlace, setCurrentPlace] = useState<Place>();
 
   return (
     <>
       <div className="canvas-outer">
-        <ImageBox url="/holidayPhotos/Japan/Japan_3a_Canon_AE-1_Fujifilm_Superia_X-TRA_400/22210002.jpg" />
-        <Places places={places} />
-        <ImageBox url="/holidayPhotos/Japan/Japan_3a_Canon_AE-1_Fujifilm_Superia_X-TRA_400/22210002.jpg" />
+        <ImageBox currentPlace={currentPlace} />
+        <Places places={places} placeNameChange={setCurrentPlace} />
+        <ImageBox currentPlace={currentPlace} />
       </div>
     </>
   );
