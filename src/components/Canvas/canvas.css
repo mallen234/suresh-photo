@@ -1,0 +1,12 @@
+.canvas-outer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.image-container {
+  width: 100px;
+  /* position: absolute; */
+  left: 30px;
+}
