@@ -12,7 +12,7 @@ const Canvas: React.FC = () => {
   return (
     <>
       <div className="canvas-outer">
-        <ImageBox currentPlace={currentPlace} />
+        {/* <ImageBox currentPlace={currentPlace} /> */}
         <Places places={places} placeNameChange={setCurrentPlace} />
         <ImageBox currentPlace={currentPlace} />
       </div>

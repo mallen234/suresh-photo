@@ -1,9 +1,8 @@
 .canvas-outer {
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: center;
   height: 100%;
-  margin-top: 100px;
 }
 
 .image-container {

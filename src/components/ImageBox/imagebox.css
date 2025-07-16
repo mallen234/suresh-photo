@@ -1,8 +1,20 @@
 .box-outer {
   width: 100%;
-  position: relative;
+  position: absolute;
 }
 
 .image-container {
-  position: absolute;
+  /* position: absolute; */
+}
+
+.flex-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+.col {
+  flex: 1;
+  width: 9%;
+  min-width: 9%;
+  border: 1px transparent black;
+  height: 100px;
 }
