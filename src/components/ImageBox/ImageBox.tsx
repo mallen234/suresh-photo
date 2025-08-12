@@ -8,9 +8,7 @@ interface ImageProps {
 }
 
 const ImageBox: React.FC<ImageProps> = ({ currentPlace }) => {
-  const maxLeft = 200;
   const minWidth = 250;
-  const maxVerticalMovement = 600;
   const imgRef = useRef<HTMLImageElement | null>(null);
 
   const maxWidth = 300;
