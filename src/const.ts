@@ -4,34 +4,49 @@ export const placeMap = {
   thailand: {
     name: "Thailand",
     url: "",
-    urlBase: "/holidayPhotos/Thailand/1/",
+    urlBase:
+      "https://suresh-photo-bucket.s3.eu-west-2.amazonaws.com/thailand/1/",
   } as Place,
-  iceland: { name: "Iceland", url: "", urlBase: "/holidayPhotos/Iceland/1/" },
+  iceland: {
+    name: "Iceland",
+    url: "",
+    urlBase:
+      "https://suresh-photo-bucket.s3.eu-west-2.amazonaws.com/iceland/1/",
+  },
   cambodia: {
     name: "Cambodia",
     url: "",
-    urlBase: "/holidayPhotos/Cambodia/1/",
+    urlBase:
+      "https://suresh-photo-bucket.s3.eu-west-2.amazonaws.com/cambodia/1/",
   } as Place,
-  vietnam: { name: "Vietnam", url: "", urlBase: "/holidayPhotos/Vietnam/1/" },
+  vietnam: {
+    name: "Vietnam",
+    url: "",
+    urlBase:
+      "https://suresh-photo-bucket.s3.eu-west-2.amazonaws.com/vietnam/1/",
+  },
   "timor leste": {
     name: "Timor Leste",
     url: "",
-    urlBase: "/holidayPhotos/TimorLeste/1/",
+    urlBase:
+      "https://suresh-photo-bucket.s3.eu-west-2.amazonaws.com/timorLeste/1/",
   } as Place,
   singapore: {
     name: "Singapore",
     url: "",
-    urlBase: "/holidayPhotos/Singapore/1/",
+    urlBase:
+      "https://suresh-photo-bucket.s3.eu-west-2.amazonaws.com/singapore/1/",
   } as Place,
   indonesia: {
     name: "Indonesia",
     url: "",
-    urlBase: "/holidayPhotos/Indonesia/1/",
+    urlBase:
+      "https://suresh-photo-bucket.s3.eu-west-2.amazonaws.com/indonesia/1/",
   } as Place,
   japan: {
     name: "Japan",
-    url: "/holidayPhotos/Japan/1/",
-    urlBase: "/holidayPhotos/Japan/1/",
+    url: "https://suresh-photo-bucket.s3.eu-west-2.amazonaws.com/japan/1/",
+    urlBase: "https://suresh-photo-bucket.s3.eu-west-2.amazonaws.com/japan/1/",
   } as Place,
 };
 
@@ -39,46 +54,58 @@ const places: Place[] = [
   {
     name: "Iceland",
     url: "",
-    urlBase: "/holidayPhotos/Iceland/1/",
+    urlBase:
+      "https://suresh-photo-bucket.s3.eu-west-2.amazonaws.com/iceland/1/",
     maxNumber: 32,
   },
   {
     name: "Thailand",
     url: "",
-    urlBase: "/holidayPhotos/Thailand/1/",
+    urlBase:
+      "https://suresh-photo-bucket.s3.eu-west-2.amazonaws.com/thailand/1/",
     maxNumber: 34,
   },
   {
     name: "Cambodia",
     url: "",
-    urlBase: "/holidayPhotos/Cambodia/1/",
+    urlBase:
+      "https://suresh-photo-bucket.s3.eu-west-2.amazonaws.com/cambodia/1/",
     maxNumber: 1,
   },
   {
     name: "Vietnam",
     url: "",
-    urlBase: "/holidayPhotos/Vietnam/1/",
+    urlBase:
+      "https://suresh-photo-bucket.s3.eu-west-2.amazonaws.com/vietnam/1/",
     maxNumber: 1,
   },
   {
     name: "Timor Leste",
     url: "",
-    urlBase: "/holidayPhotos/TimorLeste/1/",
+    urlBase:
+      "https://suresh-photo-bucket.s3.eu-west-2.amazonaws.com/timorLeste/1/",
     maxNumber: 1,
   },
   {
     name: "Singapore",
     url: "",
-    urlBase: "/holidayPhotos/Singapore/1/",
+    urlBase:
+      "https://suresh-photo-bucket.s3.eu-west-2.amazonaws.com/singapore/1/",
     maxNumber: 1,
   },
   {
     name: "Indonesia",
     url: "",
-    urlBase: "/holidayPhotos/Indonesia/1/",
+    urlBase:
+      "https://suresh-photo-bucket.s3.eu-west-2.amazonaws.com/indonesia/1/",
     maxNumber: 1,
   },
-  { name: "Japan", url: "", urlBase: "/holidayPhotos/Japan/1/", maxNumber: 14 },
+  {
+    name: "Japan",
+    url: "",
+    urlBase: "https://suresh-photo-bucket.s3.eu-west-2.amazonaws.com/japan/1/",
+    maxNumber: 14,
+  },
 ];
 
 export default places;

@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./imagebox.css";
 import { Place } from "src/types/types";
+import SmoothImage from "src/components/Image/SmoothImage";
 
 interface ImageProps {
   currentPlace?: Place;
@@ -10,13 +11,18 @@ const ImageBox: React.FC<ImageProps> = ({ currentPlace }) => {
   const maxLeft = 200;
   const minWidth = 250;
   const maxVerticalMovement = 600;
+  const imgRef = useRef<HTMLImageElement | null>(null);
 
   const maxWidth = 300;
 
-  let a = [];
+  let imagesList = [];
   const allowedColumnsSet = new Set([0, 1, 2, 6, 7, 8]);
   const bannedBoxesSet = new Set();
   for (let i = 0; i < 80; i++) {
+    if (imgRef.current) {
+      console.log("here");
+      console.log(imgRef.current);
+    }
     if (
       Math.random() > 0.9 &&
       allowedColumnsSet.has(i % 10) &&
@@ -40,57 +46,26 @@ const ImageBox: React.FC<ImageProps> = ({ currentPlace }) => {
       );
       const randomImageWidth = minWidth + Math.random() * maxWidth;
       console.log({ randomImageWidth });
-      a.push(
+      imagesList.push(
         <div className="col">
           {" "}
-          <img
-            src={`${currentPlace?.urlBase}${randomImageNumber}.jpg`}
-            className="image-container"
-            style={{
-              // left: `${image.left}px`,
-              // top: `${image.top}px`,
-              width: `${randomImageWidth}px`,
-            }}
+          <SmoothImage
+            alt={`${currentPlace?.name}`}
+            ref={imgRef}
+            src={`${currentPlace?.urlBase}${randomImageNumber}_compressed.jpg`}
+            width={randomImageWidth}
           />
         </div>
       );
     } else {
-      a.push(<div className="col"></div>);
+      imagesList.push(<div className="col"></div>);
     }
   }
 
   return (
     <>
       <div className="box-outer">
-        {/* <img
-          src={`${currentPlace?.urlBase}${randomImageNumber}.jpg`}
-          className="image-container"
-          style={{
-            left: `${image.left}px`,
-            top: `${image.top}px`,
-            width: `${image.width}px`,
-          }}
-        />
-        <img
-          src={`${currentPlace?.urlBase}${randomImageNumber2}.jpg`}
-          className="image-container"
-          style={{
-            left: `${image2.left}px`,
-            top: `${image2.top}px`,
-            width: `${image2.width}px`,
-            transform: "matrix(1, 2, 0, 1, 380, 163)",
-          }}
-        />
-        <img
-          src={`${currentPlace?.urlBase}${randomImageNumber3}.jpg`}
-          className="image-container"
-          style={{
-            left: `${image3.left}px`,
-            top: `${image3.top}px`,
-            width: `${image3.width}px`,
-          }}
-        /> */}
-        <div className="flex-grid">{a.map((c) => c)}</div>
+        <div className="flex-grid">{imagesList.map((a) => a)}</div>
       </div>
     </>
   );

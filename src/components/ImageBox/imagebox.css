@@ -15,6 +15,6 @@
   flex: 1;
   width: 9%;
   min-width: 9%;
-  border: 1px transparent black;
+  border: 1px dotted transparent;
   height: 100px;
 }

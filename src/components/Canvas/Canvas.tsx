@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./canvas.css";
 import { Place } from "src/types/types";
-
 import ImageBox from "src/components/ImageBox/ImageBox";
 import places from "src/const";
 import Places from "../Places/Places";
