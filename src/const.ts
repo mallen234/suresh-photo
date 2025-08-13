@@ -52,58 +52,61 @@ export const placeMap = {
 
 const places: Place[] = [
   {
-    name: "Iceland",
+    name: "Iceland I",
     url: "",
     urlBase:
       "https://suresh-photo-bucket.s3.eu-west-2.amazonaws.com/iceland/1/",
     maxNumber: 32,
   },
   {
-    name: "Thailand",
+    name: "Thailand I",
     url: "",
     urlBase:
       "https://suresh-photo-bucket.s3.eu-west-2.amazonaws.com/thailand/1/",
     maxNumber: 34,
   },
   {
-    name: "Cambodia",
+    name: "Thailand II",
     url: "",
     urlBase:
-      "https://suresh-photo-bucket.s3.eu-west-2.amazonaws.com/cambodia/1/",
-    maxNumber: 1,
+      "https://suresh-photo-bucket.s3.eu-west-2.amazonaws.com/thailand/2/",
+    maxNumber: 34,
   },
   {
-    name: "Vietnam",
+    name: "Thailand III",
     url: "",
     urlBase:
-      "https://suresh-photo-bucket.s3.eu-west-2.amazonaws.com/vietnam/1/",
-    maxNumber: 1,
+      "https://suresh-photo-bucket.s3.eu-west-2.amazonaws.com/thailand/3/",
+    maxNumber: 34,
   },
   {
-    name: "Timor Leste",
+    name: "London I",
     url: "",
-    urlBase:
-      "https://suresh-photo-bucket.s3.eu-west-2.amazonaws.com/timorLeste/1/",
-    maxNumber: 1,
+    urlBase: "https://suresh-photo-bucket.s3.eu-west-2.amazonaws.com/london/1/",
+    maxNumber: 34,
   },
   {
-    name: "Singapore",
-    url: "",
-    urlBase:
-      "https://suresh-photo-bucket.s3.eu-west-2.amazonaws.com/singapore/1/",
-    maxNumber: 1,
-  },
-  {
-    name: "Indonesia",
-    url: "",
-    urlBase:
-      "https://suresh-photo-bucket.s3.eu-west-2.amazonaws.com/indonesia/1/",
-    maxNumber: 1,
-  },
-  {
-    name: "Japan",
+    name: "Japan I",
     url: "",
     urlBase: "https://suresh-photo-bucket.s3.eu-west-2.amazonaws.com/japan/1/",
+    maxNumber: 14,
+  },
+  {
+    name: "Japan II",
+    url: "",
+    urlBase: "https://suresh-photo-bucket.s3.eu-west-2.amazonaws.com/japan/2/",
+    maxNumber: 14,
+  },
+  {
+    name: "Japan III",
+    url: "",
+    urlBase: "https://suresh-photo-bucket.s3.eu-west-2.amazonaws.com/japan/3/",
+    maxNumber: 14,
+  },
+  {
+    name: "Japan IV",
+    url: "",
+    urlBase: "https://suresh-photo-bucket.s3.eu-west-2.amazonaws.com/japan/4/",
     maxNumber: 14,
   },
 ];
