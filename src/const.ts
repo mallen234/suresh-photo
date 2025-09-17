@@ -56,14 +56,14 @@ const places: Place[] = [
     url: "",
     urlBase:
       "https://suresh-photo-bucket.s3.eu-west-2.amazonaws.com/iceland/1/",
-    maxNumber: 32,
+    maxNumber: 23,
   },
   {
     name: "Thailand I",
     url: "",
     urlBase:
       "https://suresh-photo-bucket.s3.eu-west-2.amazonaws.com/thailand/1/",
-    maxNumber: 34,
+    maxNumber: 56,
   },
   {
     name: "Thailand II",
@@ -89,25 +89,25 @@ const places: Place[] = [
     name: "Japan I",
     url: "",
     urlBase: "https://suresh-photo-bucket.s3.eu-west-2.amazonaws.com/japan/1/",
-    maxNumber: 14,
+    maxNumber: 33,
   },
   {
     name: "Japan II",
     url: "",
     urlBase: "https://suresh-photo-bucket.s3.eu-west-2.amazonaws.com/japan/2/",
-    maxNumber: 14,
+    maxNumber: 9,
   },
   {
     name: "Japan III",
     url: "",
     urlBase: "https://suresh-photo-bucket.s3.eu-west-2.amazonaws.com/japan/3/",
-    maxNumber: 14,
+    maxNumber: 8,
   },
   {
     name: "Japan IV",
     url: "",
     urlBase: "https://suresh-photo-bucket.s3.eu-west-2.amazonaws.com/japan/4/",
-    maxNumber: 14,
+    maxNumber: 29,
   },
 ];
 
